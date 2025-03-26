@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Calculator</h1>
+        <label>Age: <input type="number" id="age"></label>
+        <label>Weight (kg): <input type="number" id="weight"></label>
+        <label>Height (cm): <input type="number" id="height"></label>
+        <label>Activity Level: 
+            <select id="activity">
+                <option value="1.2">Sedentary</option>
+                <option value="1.375">Light Activity</option>
+                <option value="1.55">Moderate Activity</option>
+                <option value="1.725">Very Active</option>
+                <option value="1.9">Super Active</option>
+            </select>
+        </label>
+        <button onclick="calculateCalories()">Calculate</button>
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
